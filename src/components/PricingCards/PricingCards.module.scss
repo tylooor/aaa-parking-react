@@ -1,0 +1,111 @@
+@use '../../styles/variables' as *;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 340px;
+
+  @media (max-width: $desktop) {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  background: $white;
+  border-radius: $border-radius;
+  padding: 20px 24px;
+  text-align: center;
+  box-shadow: $shadow-lg;
+  transition: transform $transition-normal, box-shadow $transition-normal;
+  border: 2px solid $primary-color;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: $primary-color;
+    border-radius: 0 0 4px 4px;
+  }
+
+  // First card: full width of container, centered on top
+  &:first-child {
+    flex: 0 0 60%;
+    margin: 0 auto;
+  }
+
+  // Second and third cards: share the bottom row
+  &:nth-child(2),
+  &:nth-child(3) {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-xl;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 20px 24px;
+    flex: 1 1 0 !important;
+    margin: 0 !important;
+  }
+
+  @media (max-width: $mobile) {
+    flex: none !important;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto !important;
+  }
+}
+
+.title {
+  font-size: 1.1rem;
+  color: $text-primary;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $primary-color;
+    border-radius: 2px;
+  }
+}
+
+.priceWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: $text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: $primary-color;
+}

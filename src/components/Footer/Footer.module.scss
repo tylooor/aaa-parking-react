@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  background-color: $near-black;
+  color: $text-light;
+  padding: 40px $content-padding;
+  margin-top: 0;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.backToTop {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $text-light;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all $transition-normal;
+  margin-bottom: 8px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.phone {
+  color: $text-light;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  transition: opacity $transition-fast;
+
+  &:hover {
+    opacity: 1;
+    color: $primary-light;
+  }
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  opacity: 0.6;
+  font-size: 0.8rem;
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity $transition-fast;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

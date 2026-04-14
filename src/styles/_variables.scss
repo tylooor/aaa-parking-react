@@ -1,0 +1,48 @@
+// Brand colors
+$primary-color: #a00000;
+$primary-dark: #800000;
+$primary-light: #c62828;
+
+// Neutral palette
+$white: #ffffff;
+$off-white: #f8f9fa;
+$light-gray: #e9ecef;
+$medium-gray: #6c757d;
+$dark-gray: #343a40;
+$near-black: #1a1a2e;
+$black: #000000;
+
+// Text colors
+$text-primary: #212529;
+$text-secondary: #495057;
+$text-light: #f8f9fa;
+$text-muted: #6c757d;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+$shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.25);
+
+// Layout
+$max-width: 1200px;
+$content-padding: 24px;
+$section-gap: 80px;
+$border-radius: 12px;
+$border-radius-sm: 8px;
+$border-radius-lg: 16px;
+
+// Breakpoints
+$mobile: 600px;
+$tablet: 900px;
+$desktop: 1200px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Glassmorphism
+$glass-bg: rgba(80, 0, 0, 0.75);
+$glass-blur: 12px;
+$glass-border: rgba(255, 255, 255, 0.15);

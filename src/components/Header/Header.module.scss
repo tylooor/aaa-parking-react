@@ -1,0 +1,163 @@
+@use '../../styles/variables' as *;
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ctaBar {
+  background-color: #3a0000;
+  color: $text-light;
+  font-size: 0.85rem;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.ctaContent {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 8px $content-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phoneLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: $text-light;
+  padding: 4px 0;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+.ctaLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.emailLink,
+.mapsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: $text-light;
+  opacity: 0.85;
+
+  &:hover {
+    opacity: 1;
+    color: $primary-light;
+  }
+}
+
+.navbar {
+  background-color: $primary-color;
+  box-shadow: $shadow-md;
+}
+
+.navContent {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $content-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+
+  @media (max-width: $tablet) {
+    min-height: 60px;
+  }
+}
+
+.brand {
+  color: $white;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  padding: 8px 20px;
+  border-radius: $border-radius-sm;
+  transition: border-color $transition-normal;
+
+  &:hover {
+    border-color: $white;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 1.2rem;
+    padding: 6px 14px;
+  }
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+
+  @media (max-width: $tablet) {
+    display: flex;
+  }
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $white;
+    border-radius: 2px;
+    transition: all $transition-normal;
+  }
+
+  &.open {
+    span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background-color: $primary-dark;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height $transition-normal;
+
+  @media (max-width: $tablet) {
+    display: flex;
+  }
+
+  &.open {
+    max-height: 200px;
+  }
+
+  a {
+    color: $white;
+    padding: 12px $content-padding;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color $transition-fast;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
