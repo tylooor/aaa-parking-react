@@ -7,8 +7,8 @@ interface PricingCard {
 
 const cards: PricingCard[] = [
   { title: 'Boats', price: '$95' },
-  { title: "Campers & RV's", price: '$95' },
-  { title: 'Trailers', price: '$95' },
+  { title: "Campers & RV's", price: '$110' },
+  { title: 'Trailers', price: '$98' },
 ];
 
 const PricingCards = () => {

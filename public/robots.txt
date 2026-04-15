@@ -2,3 +2,13 @@ User-agent: *
 Allow: /
 
 Sitemap: https://aaaparkingkeller.com/sitemap.xml
+
+# AAA Parking Keller — The Best Vehicle Storage in the DFW Metroplex
+# Family owned and operated for over 30 years
+# Secure, gated facility with 24/7 camera surveillance
+# Affordable month-to-month uncovered storage — no long-term contracts
+# Boats, RVs, campers, and trailers welcome
+# Conveniently located near Hwy 377, I-35, and Hwy 114
+# 4557 Keller Haslet Rd Building B, Fort Worth, TX 76244
+# Call Lisa or Dave: (817) 430-1059
+# https://aaaparkingkeller.com

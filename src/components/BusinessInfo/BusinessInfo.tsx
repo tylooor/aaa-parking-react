@@ -21,12 +21,12 @@ const BusinessInfo = () => {
                 <h2>Address</h2>
               </div>
               <a
-                href="https://maps.google.com/maps/dir//4557+Keller+Haslet+Rd+Fort+Worth,+TX+76244/@32.9645107,-97.2604743,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x864dd0a94f184ce5:0x5d678f6da810e1a"
+                href="https://maps.google.com/maps/dir//4557+Keller+Haslet+Rd+Building+B+Fort+Worth,+TX+76244/@32.9645107,-97.2604743,14z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.addressLink}
               >
-                <p>4557 Keller Haslet Rd</p>
+                <p>4557 Keller Haslet Rd Building B</p>
                 <p>Fort Worth, TX 76244</p>
               </a>
             </div>
@@ -53,6 +53,18 @@ const BusinessInfo = () => {
               <p className={styles.hours}>Monday - Sunday: 6 AM - 9 PM</p>
             </div>
           </div>
+        </div>
+        <div className={styles.mapWrapper}>
+          <iframe
+            title="AAA Parking Keller location"
+            src="https://maps.google.com/maps?q=4557+Keller+Haslet+Rd+Building+B+Fort+Worth+TX+76244&output=embed"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>

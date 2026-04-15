@@ -27,14 +27,20 @@ const Hero = ({ children }: PropsWithChildren) => {
             <span className={styles.highlight}>AAA Parking Keller</span>
           </h2>
           <p className={styles.description}>
-            AAA Parking is a family owned and operated vehicle storage facility.
-            We've been proudly serving the Dallas Fort Worth area for over 30
-            years. Located conveniently next to Hwy 377, I-35, and Hwy 114 you
-            can quickly get back to what matters. We provide gated uncovered
-            storage with 24/7 camera survalence.
+            AAA Parking is a family owned and operated storage facility proudly
+            serving the Dallas Fort Worth area for over 30 years. Our secure,
+            gated facility features 24/7 camera surveillance and well-maintained
+            grounds. We offer affordable,
+            month-to-month uncovered storage with no long-term contracts. Located
+            conveniently near Hwy 377, I-35, and Hwy 114 so you can get back on
+            the road. Whether you're storing a boat, RV, camper, or trailer
+            — we've got the space and the security you need.
           </p>
           <a href="tel:+18174301059" className={styles.ctaButton}>
-            Contact Us Today
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Call Lisa or Dave for Availability
           </a>
         </div>
         {children && <div className={styles.aside}>{children}</div>}

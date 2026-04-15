@@ -23,7 +23,7 @@ const Header = () => {
               contact@aaaparkingkeller.com
             </a>
             <a
-              href="https://maps.google.com/maps/dir//4557+Keller+Haslet+Rd+Fort+Worth,+TX+76244/@32.9645107,-97.2604743,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x864dd0a94f184ce5:0x5d678f6da810e1a"
+              href="https://maps.google.com/maps/dir//4557+Keller+Haslet+Rd+Building+B+Fort+Worth,+TX+76244/@32.9645107,-97.2604743,14z"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.mapsLink}
@@ -55,7 +55,7 @@ const Header = () => {
           <a href="tel:+18174301059">Call or Text (817)-430-1059</a>
           <a href="mailto:contact@aaaparkingkeller.com">contact@aaaparkingkeller.com</a>
           <a
-            href="https://maps.google.com/maps/dir//4557+Keller+Haslet+Rd+Fort+Worth,+TX+76244/@32.9645107,-97.2604743,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x864dd0a94f184ce5:0x5d678f6da810e1a"
+            href="https://maps.google.com/maps/dir//4557+Keller+Haslet+Rd+Building+B+Fort+Worth,+TX+76244/@32.9645107,-97.2604743,14z"
             target="_blank"
             rel="noopener noreferrer"
           >
